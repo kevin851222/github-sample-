@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        * {
+            font-family: sans-serif;
+        }
+
+
+        .top_div {
+            background-image: url(圖片/assets/asset\ 7.png);
+            display: flex;
+            margin: auto;
+            padding-bottom: 100px;
+            position: relative;
+        }
+
+        .top_logo {
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .top_list {
+            position: absolute;
+            top: 40px;
+            left: 125px;
+
+        }
+
+        ul li:hover {
+            color: green;
+        }
+
+        ul li {
+            display: inline;
+            margin: 20px;
+            font-size: 15px;
+        }
+
+        .top_logo img {
+            width: 180px;
+            height: 50px;
+        }
+
+        .top_icon {
+            margin-top: 25px;
+            position: absolute;
+            right: 200px;
+        }
+
+        .top_icon img {
+            width: 30px;
+            height: 30px;
+            padding: 15px;
+        }
+
+        .advertise {
+            background-image: url(圖片/assets/asset\ 7.png);
+            margin: auto;
+            display: flex;
+        }
+
+        .advertise_wrap {
+            width: 1500px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .ad_txt {
+            margin: auto;
+            width: 750px;
+        }
+
+        .ad_txt p {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        p.ad_txt_collection {
+            font-size: 70px;
+            margin: auto;
+            font-weight: 100;
+
+        }
+
+
+
+        .ad_button {
+            font-size: 15px;
+            background-color: black;
+            color: white;
+            width: 180px;
+            height: 45px;
+            text-align: center;
+            line-height: 50px;
+            margin-left: 15px;
+        }
+
+        .ad_button:hover {
+            background-color: cornflowerblue;
+        }
+
+        .ad_pic {
+            width: 750px;
+            box-sizing: border-box;
+        }
+
+        .ad_pic img {
+            width: 90%;
+        }
+
+        .importants {
+            width: 1500px;
+            margin: auto;
+        }
+
+        .importants_txt_p {
+            margin-top: 50px;
+        }
+
+        .importants p {
+            color: gray;
+        }
+
+        .importants_txt {
+            width: 1500px;
+            text-align: center;
+            margin: 50px 0;
+
+        }
+
+        .importants_txt h2 {
+            font-size: 35px;
+            color: forestgreen;
+        }
+
+        .importants_txt p {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .benefits {
+            width: 1500px;
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .benefits_txt_left {
+            margin-top: 50px;
+            width: 500px;
+            text-align: right;
+        }
+
+        .benefits_pic {
+            width: 500px;
+            margin-top: auto;
+        }
+
+        .benefits_pic img {
+            width: 100%;
+        }
+
+        .benefits_txt_right {
+            margin-top: 50px;
+            width: 500px;
+        }
+
+        .benefits_txt {
+            margin-bottom: 50px;
+        }
+
+        .benefits_txt h3 {
+            font-size: 25px;
+        }
+
+        .staff {
+            width: 1500px;
+            flex-wrap: wrap;
+            display: flex;
+            margin: auto;
+        }
+
+        .staff_pick {
+            width: 1500px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h2 {
+            font-size: 35px;
+            color: forestgreen;
+        }
+
+        .item {
+            width: 480px;
+            margin: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100%;
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+
+        .item p {
+            margin-bottom: 25px;
+        }
+
+        .item h4 {
+            font-size: 20px;
+        }
+
+        .item span {
+            font-size: 10px;
+        }
+
+        .item:hover {
+            opacity: 0.5;
+        }
+
+        .products {
+            background-image: url(圖片/assets/asset\ 43.png);
+            background-size: cover;
+            margin-top: 100px;
+        }
+
+        .products_box {
+            flex-wrap: wrap;
+            display: flex;
+            margin: auto;
+            width: 1500px;
+            height: 800px;
+        }
+
+        .products_txt {
+            width: 750px;
+            margin: auto;
+        }
+
+        .products_txt p {
+            font-size: 20px;
+        }
+
+        .products_text h2 {
+            text-align: left;
+        }
+
+        .products_button {
+            border: 2px black solid;
+            width: 200px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 20px;
+        }
+
+        .products_button:hover {
+            background-color: forestgreen;
+            color: white;
+        }
+
+        .products_box {
+            width: 1500px;
+        }
+
+        .products_video {
+            width: 750px;
+            margin: auto;
+        }
+
+        .products_video img {
+            width: 100%;
+        }
+
+        .products_txt_h2 {
+            margin-left: 180px;
+
+        }
+
+        .products_txt_p {
+            margin-left: 180px;
+        }
+
+        .products_txt_p p {
+            font-size: 18px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        .products_button {
+            margin-left: 180px;
+        }
+
+        .instagram {
+            width: 1500px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+        }
+
+        .instagram_icon {
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+
+        .instagram_pic {
+            display: flex;
+            flex-direction: row;
+            width: 1500px;
+            margin-bottom: 50px;
+        }
+
+        .pic_box {
+            width: 325px;
+            height: 300px;
+            margin: auto;
+            background-color: black;
+        }
+
+        .instagram_pic img:hover {
+            opacity: 0.5;
+        }
+
+        .instagram_pic img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .instagram_icon p {
+            font-size: 30px;
+        }
+
+        .instagram_icon img {
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: rgba(211, 211, 211, 0.272);
+        }
+
+        .footer_box {
+            width: 1500px;
+            display: flex;
+            margin: auto;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .footer_logo {
+            width: 1500px;
+            margin: auto;
+        }
+
+        .footer_logo img {
+            width: 180px;
+            height: 50px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .footer_aboutus {
+            width: 1500px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .footer_icon {
+            width: 1500px;
+            display: flex;
+            margin-bottom: 30px;
+            justify-content: center;
+
+        }
+
+        .footer_copyright {
+            width: 1500px;
+            margin-bottom: 80px;
+        }
+
+        .footer_icon a {
+            color: white;
+            background-color: black;
+            border-radius: 50%;
+            width: 45px;
+            height: 30px;
+            padding-top: 15px;
+            margin: 10px;
+        }
+
+
+        .footer_copyright p {
+            color: rgba(128, 128, 128, 0.712);
+            font-size: 15px;
+        }
+
+        .footer_aboutus a {
+            color: black;
+            font-size: 10px;
+            margin: 0 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="top_div">
+        <div class="top_list">
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Featured</li>
+                <li>Pages</li>
+                <li>Element</li>
+            </ul>
+        </div>
+        <div class="top_logo">
+            <img src="圖片/assets/asset 6.png" alt="">
+        </div>
+        <div class="top_icon">
+            <img src="圖片/assets/asset 44.svg" alt="">
+            <img src="圖片/assets/asset 45.svg" alt="">
+            <img src="圖片/assets/asset 46.svg" alt="">
+        </div>
+    </div>
+
+    <div class="advertise">
+        <div class="advertise_wrap">
+            <div class="ad_txt">
+                <p class="ad_txt_collection">
+                    Collection New<br>Beautiful
+                </p>
+                <p>
+                    from $69
+                </p>
+                <div class="ad_button">
+                    SHOP NOW
+                </div>
+            </div>
+            <div class="ad_pic">
+                <img src="圖片/assets/asset 8.png" alt="pic">
+            </div>
+        </div>
+    </div>
+    <div class="importants">
+        <div class="importants_txt">
+            <h2>The important benefits of<br>greenery for the environment and health</h2>
+            <div class="importants_txt_p">
+                <p>
+                    Trees have always been considered as "lungs" of the earth. Planting lots of trees helps provide a
+                    great deal of oxygen for us to breathe.<br>
+                    On average, one tree can provide enough oxygen for four people. At the same time they also absorb
+                    C02, ammonia, S02, .. in the world!
+                </p>
+            </div>
+        </div>
+        <div class="benefits">
+            <div class="benefits_txt_left">
+                <div class="benefits_txt">
+                    <h3>Reducing environmental pollution</h3>
+                    <p><br>Trees have always been considered as "lungs" of the earth.</p>
+                </div>
+                <div class="benefits_txt">
+                    <h3>Save water and reduce soil erosion</h3>
+                    <p><br>Trees can slow down the evaporation of water, increasing air humidity.</p>
+                </div>
+                <div class="benefits_txt">
+                    <h3>Reduce street temperatures</h3>
+                    <p><br>Planting more trees in densely populated areas will not only make the air there more fresh
+                    </p>
+                </div>
+            </div>
+            <div class="benefits_pic">
+                <img src="圖片/assets/asset 10.png">
+            </div>
+            <div class="benefits_txt_right">
+                <div class="benefits_txt">
+                    <h3>Energy conservation</h3>
+                    <p><br>One tree can cool down, cool down 10 rooms</p>
+                </div>
+                <div class="benefits_txt">
+                    <h3>Prevent ultraviolet influence</h3>
+                    <p><br>Green trees become shade to block the sunlight from the road</p>
+                </div>
+                <div class="benefits_txt">
+                    <h3>Improve human health</h3>
+                    <p><br>Living in a quiet,cool,clean and fresh environment will make your health better</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="staff">
+        <div class="staff_pick">
+            <h2>Staff.Pick</h2>
+        </div>
+        <div class="item">
+            <img src="圖片/assets/asset 11.png">
+            <p>Sapien Libero</p>
+            <h4>$150.00</h4>
+        </div>
+        <div class="item">
+            <img src="圖片/assets/asset 13.png">
+            <p>Fringilla Augue 360</p>
+            <h4>
+                <span>$200.00</span>
+                $150.00
+        </div>
+        <div class="item">
+            <img src="圖片/assets/asset 15.png">
+            <p>Faded Short Sleeves Variable</p>
+            <h4>
+                <span>$200.00</span>
+                $150.00
+            </h4>
+        </div>
+        <div class="item">
+            <img src="圖片/assets/asset 17.png">
+            <p>Purple Flowers</p>
+            <h4>$180.00</h4>
+        </div>
+        <div class="item">
+            <img src="圖片/assets/asset 19.png">
+            <p>Adipiscing Cursus Out Of Stock</p>
+            <h4>$450.00</h4>
+        </div>
+        <div class="item">
+            <img src="圖片/assets/asset 21.png">
+            <p>Frongilla Augue</p>
+            <h4>$320.00</h4>
+        </div>
+        <div class="item">
+            <img src="圖片/assets/asset 23.png">
+            <p>Purple Flowers</p>
+            <h4>
+                <span>$200.00</span>
+                $150.00
+            </h4>
+        </div>
+        <div class="item">
+            <img src="圖片/assets/asset 25.png">
+            <p>Plant</p>
+            <h4>
+                <span>$200.00</span>
+                $150.00
+            </h4>
+        </div>
+        <div class="item">
+            <img src="圖片/assets/asset 27.png">
+            <p>Plant Beautiful</p>
+            <h4>$150.00</h4>
+        </div>
+    </div>
+    <div class="products">
+        <div class="products_box">
+            <div class="products_txt">
+                <div class="products_txt_h2">
+                    <h2>A Number Of Our Products</h2>
+                </div>
+                <div class="products_txt_p">
+                    <p>
+                        Pick up all you need to keep your board in optimum condition with <br> Decathlon’s set of
+                        surfboard accessories.
+                    </p>
+                </div>
+                <div class="products_button">
+                    <p>
+                        SHOP NOW
+                    </p>
+                </div>
+            </div>
+            <div class="products_video">
+                <a href="https://www.youtube.com/watch?v=nkhpGC10OVw"><img src="圖片/assets/asset 29.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="instagram">
+        <div class="instagram_icon">
+            <img src="圖片/assets/asset 52.svg" width="50px" height="50px">
+            <p>SHOP INSTAGRAM</p>
+        </div>
+
+        <div class="instagram_pic">
+            <div class="pic_box">
+                <img src="圖片/assets/asset 30.png" alt>
+            </div>
+            <div class="pic_box">
+                <img src="圖片/assets/asset 31.png" alt>
+            </div>
+            <div class="pic_box">
+                <img src="圖片/assets/asset 32.png" alt>
+            </div>
+            <div class="pic_box">
+                <img src="圖片/assets/asset 33.png" alt>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_box">
+            <div class="footer_logo">
+                <img src="圖片/assets/asset 6.png" alt="">
+            </div>
+            <div class="footer_aboutus">
+                <a href="#" style="text-decoration:none;">ABOUT US</a>
+                <a href="#" style="text-decoration:none;">一  CUSTOMER SERVICE  一</a>
+                <a href="#" style="text-decoration:none;">SUBSCRIPTION</a>
+            </div>
+            <div class="footer_icon">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-globe"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer_copyright">
+                <p>Website by kevin . Copyright SunplantShop</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

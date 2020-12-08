@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 900px;
+            height: 450px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: gray;          
+            flex-wrap: wrap;
+        }
+        .item{
+            box-sizing: border-box;
+            font-size: 50px;
+            border: 2px solid red;
+            width: 50%;
+            
+        }
+        .item1{
+            height: 100%;
+            width: 50%;
+        }
+        .item + .item{
+            width: 25%;
+            height: 50%;
+        }
+        .item:nth-child(3),
+        .item:nth-child(5){
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

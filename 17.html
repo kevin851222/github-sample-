@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .group{
+            width: 900px;
+            height: 600px;
+            background-color: gray;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            align-content: center;
+        }
+        .item{
+            width: 280px;
+            height: 100px;
+            background-color: red;
+            color: #fff;
+            font-size: 40px;
+            margin: 2px;
+        }
+        .item:nth-child(1){
+            height: 200px;
+        }
+        .item:nth-child(4){
+            height: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="group">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
